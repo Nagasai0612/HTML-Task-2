@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+
+  header {
+    background-color: #0043CE;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .property {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .property img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .property-details {
+    padding: 20px;
+    flex: 1;
+  }
+
+  .property-details h2 {
+    margin: 0;
+    color: #0043CE;
+    font-size: 1.8rem;
+  }
+
+  .property-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  .property-details ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .property-details ul li {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+  }
+
+  .buttons {
+    margin-top: 15px;
+  }
+
+  .button {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    background-color: #0043CE;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+
+  .button:hover {
+    background-color: #0033a0;
+  }
+
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+  footer a {
+    color: #04aaff;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .property {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .property img {
+      max-width: 100%;
+    }
+
+    .property-details {
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 2rem;
+    }
+
+    header p {
+      font-size: 1rem;
+    }
+
+    .property-details h2 {
+      font-size: 1.5rem;
+    }
+  }
